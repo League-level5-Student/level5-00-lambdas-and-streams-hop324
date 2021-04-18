@@ -13,9 +13,19 @@ public class LambdaMethods {
 		}, "repeat");
 		
 		//2. Call the printCustonMessage method using a lambda so that the String prints backwards.
-		
+		printCustomMessage((s)->{
+			String holder = "";
+			for(int i = s.length(); i > 0; i--) {
+				holder += s.charAt(i-1);
+			}
+			System.out.println(holder);
+		}, "backwards");
 		//3. Call the printCustonMessage method using a lambda so that the String prints with a mix between upper an lower case characters.
-		
+		printCustomMessage((s)->{
+			for(int i = 0; i < 10; i++) {
+				System.out.println(s);
+			}
+		}, "wacky weird sentence");
 		//4. Call the printCustonMessage method using a lambda so that the String prints with a period in between each character.
 		
 		//5. Call the printCustonMessage method using a lambda so that the String prints without any vowels.
