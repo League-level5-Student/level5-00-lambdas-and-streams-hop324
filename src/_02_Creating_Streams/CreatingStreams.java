@@ -28,5 +28,10 @@ public class CreatingStreams {
 		dQueue.push(1.0);
 		dQueue.push(2.0);
 		dQueue.push(3.0);
+		
+		
+		intList
+			.stream()
+			.forEach(System.out::println);
 	}
 }
