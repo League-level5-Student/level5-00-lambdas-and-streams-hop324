@@ -16,6 +16,8 @@ public class StreamSearcher {
 		//   elements that match the String parameter.
 		//4. Return the count of the filtered stream.
 		
-		return strings.filter(match -> match.indexOf(strToCount));
+		long result = strings.filter(x -> x.contains(strToCount)).count();
+		
+		return result;
 	}
 }
